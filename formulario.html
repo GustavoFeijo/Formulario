@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./formulario.css" type="text/css">
+    <title>Formulário</title>
+</head>
+<body>
+    
+    <div>
+        <h1 id="titulo">Monte seu PC</h1>
+        <p id="subtitulo">Complete todos os campos com as peças específicas</p>
+        <br>
+    </div>  
+
+    <form>
+        <fieldset class="grupo">
+            <div class="campo">
+                <label for="placa-mae"><strong>Placa Mãe</strong></label>
+                <input type="text" name="placa-mae" id="placa-mae" required>
+            </div>
+
+            <div class="campo">
+                <label for="memoria"><strong>Memória</strong></label>
+                <input type="text" name="memoria" id="memoria" required>
+            </div>
+
+            <div class="campo">
+                <label for="processador"><strong>Processador</strong></label>
+                <input type="text" name="processador" id="processador" required>
+            </div>
+
+            <div class="campo">
+                <label for="cooler"><strong>Cooler</strong></label>
+                <input type="text" name="cooler" id="cooler" required>
+            </div>
+
+            <div class="campo">  
+                <label for="placa-de-video"><strong>Placa de Video</strong></label>
+                <input type="text" name="placa-de-video" id="placa-de-video" required>
+            </div>
+
+            <div class="campo">
+                <label for="fonte"><strong>Fonte</strong></label>
+                <input type="text" name="fonte" id="fonte" required>
+            </div>
+
+            <div class="campo">
+                <label for="gabinete"><strong>Gabinete</strong></label>
+                <input type="text" name="gabinete" id="gabinete" required>
+            </div>
+
+            <div class="campo">
+                <label for="monitor"><strong>Monitor</strong></label>
+                <input type="text" name="monitor" id="monitor" required>
+            </div>
+        </fieldset>
+
+        <div class="campo">
+            <label for="email"><strong>E-mail</strong></label>
+            <input type="email" name="email" id="email" required>
+        </div >
+
+        <div class="campo">
+            <label><strong>Qual seu Objetivo para este computador?</strong></label>
+            <label>
+                <input type="radio" name="departamento" value="gamer" checked>Gamer
+            </label>
+
+            <label>
+                <input type="radio" name="departamento" value="home">Home
+            </label>
+
+            <label>
+                <input type="radio" name="departamento" value="moba">Moba
+            </label>
+        </div>
+
+        <div class="campo">
+            <label for="pc"><strong>Tipo de PC</strong></label>
+            <select name="pc" id="pc">
+                <option selected disable value="">Select...</option>
+                <option>Entry Computer</option>
+                <option>Middle Computer</option>
+                <option>High Computer</option>
+            </select>
+        </div>   
+
+        <fieldset class="grupo">
+        <div id="check">
+            <label><strong>Quais jogos pretende jogar?</strong></label>
+
+            <input type="checkbox" name="valor1" id="valor1" value="lol">
+            <label for="valor1">League of Legends</label>
+
+            <input type="checkbox" name="valor2" id="valor2" value="warzone">
+            <label for="valor2">Call of Duty Warzone</label>
+
+            <input type="checkbox" name="valor3" id="valor3" value="csgo">
+            <label for="valor3">Counter-Strike Global Offensive </label>
+
+            <input type="checkbox" name="valor4" id="valor4" value="apex">
+            <label for="valor4">Apex</label>
+
+            <input type="checkbox" name="valor5" id="valor5" value="Tibia">
+            <label for="valor5">Tibia</label>
+
+            <input type="checkbox" name="valor6" id="valor6" value="god-of-war">
+            <label for="valor6">God of War</label>
+
+            <input type="checkbox" name="valor7" id="valor7" value="path-of-exile">
+            <label for="valor7">Path of Exile</label>
+        </div>
+        </fieldset>
+
+        <div class="campo">
+            <br>
+            <label><strong>Conte um pouco porque escolheu comprar conosco</strong></label>
+            <textarea name="experiencia" id="experiencia" rows="6" style="width: 26em;"></textarea>
+        </div>
+
+        <button class="botao" type="submit">Concluido</button>
+
+    </form>
+
+
+</body>
+</html>
